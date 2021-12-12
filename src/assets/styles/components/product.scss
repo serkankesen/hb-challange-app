@@ -1,0 +1,85 @@
+.product {
+    position: relative;
+    margin: 19px 5px;
+    cursor: pointer;
+    height: 465px;
+    width: 254px;
+    &:hover {
+        border-radius: 10px;
+        border: 1px #e5e5e5 solid;
+        .product-image {
+            border: 0px;
+        }
+        .product-properties {
+            display: none;
+        }
+        .product-button {
+            position: absolute;
+            background: rgba(255, 96, 0, 0.11);
+            border-radius: 8px;
+            width: 233px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            bottom: 20px;
+            .add-to-cart {
+                color: #ff6000;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        .disabled {
+            background: rgba(126, 126, 126, 0.11);
+            .add-to-cart {
+                color: #b0b0b0;
+            }
+        }
+    }
+    .product-image {
+        border: 1px #e5e5e5 solid;
+        padding: 3px 15px 4px;
+        border-radius: 10px;
+        img {
+            width: 224px;
+            height: 332px;
+            object-fit: contain;
+        }
+    }
+    .product-title {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 15px;
+        margin-top: 9px;
+        color: #484848;
+    }
+    .product-properties {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        margin-top: 13px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #484848;
+
+        .discount-price {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .list-price {
+            text-decoration-line: line-through;
+            font-size: 13px;
+            color: #9b9b9b;
+        }
+        .discount-rate {
+            font-size: 12px;
+            color: #f90000;
+        }
+    }
+    .product-button {
+        display: none;
+    }
+}

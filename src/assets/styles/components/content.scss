@@ -1,0 +1,44 @@
+.content-info {
+    position: relative;
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 4;
+        position: relative;
+    }
+    .pagination {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 35px 0 35px;
+
+        .pagination-item {
+            display: inline-block;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            box-sizing: border-box;
+            border-radius: 9px;
+            margin-right: 6px;
+            padding: 6.6px;
+            width: 33px;
+            height: 33px;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 20px;
+            &:first-child {
+                margin-right: 13.2px;
+            }
+            &:nth-last-child(2) {
+                margin-right: 13.2px;
+            }
+        }
+        .disabled {
+            background: #b0b0b0;
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+@import "icon-font.scss";
+.container {
+    padding: 25px 80px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.35);
+    .search {
+        margin-left: 163px;
+        position: relative;
+        i {
+            position: absolute;
+            top: 15px;
+            left: 27px;
+            height: 17.5px;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            width: 17.5px;
+        }
+        input {
+            height: 48px;
+            width: 695px;
+            background-color: #eee;
+            border-radius: 100px;
+            font-size: 15px;
+            padding: 24px 0 24px 56px;
+            &::placeholder {
+                color: #b0b0b0;
+                &:focus-visible {
+                    outline: none;
+                    border-color: inherit;
+                }
+            }
+        }
+    }
+    .basket {
+        position: relative;
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        width: 120px;
+        height: 48px;
+        border: 1px #b0b0b0 solid;
+        a {
+            font-size: 17px;
+            color: #b0b0b0;
+        }
+        .basket-count {
+            position: absolute;
+            display: flex;
+            width: 18px;
+            height: 18px;
+            top: -7px;
+            right: -7px;
+            font-size: 12px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            background-color: #ff6000;
+            border-radius: 100%;
+        }
+        .basket-inner {
+            display: none;
+            overflow: auto;
+        }
+        &:hover {
+            .basket-inner {
+                display: block;
+
+                position: absolute;
+                top: 46px;
+                border: 1px #b0b0b0 solid;
+                border-radius: 5px;
+                padding: 28px;
+                width: 360px;
+                height: 360px;
+                background-color: #fff;
+                z-index: 1;
+                right: -1px;
+                .basket-list {
+                    display: flex;
+                    flex-direction: row;
+                    height: 72px;
+                    margin-bottom: 20px;
+                    position: relative;
+                }
+                .basket-inner-text {
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #484848;
+                    margin-left: 17px;
+                    width: 170px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                img {
+                    object-fit: contain;
+                    width: 54px;
+                    height: 72px;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 4px;
+                    padding: 7px;
+                }
+                .remove-basket {
+                    border-radius: 4px;
+                    border: 1px solid #f90000;
+                    background-color: #fff;
+                    width: 49px;
+                    height: 18px;
+                    color: #f90000;
+                    margin-top: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 18px;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
